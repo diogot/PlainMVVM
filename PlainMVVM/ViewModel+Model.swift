@@ -16,15 +16,7 @@ public extension ViewModel {
         NSAttributedString(string: model.name,
             attributes: [NSForegroundColorAttributeName: UIColor.redColor()])
 
-        let text: String
-        switch model.emoji {
-        case .👊:
-            text = "👊"
-        case .👍:
-            text = "👍"
-        case .👎:
-            text = "👎"
-        }
+        let text: String = model.emoji.rawValue
 
         self.init(
             attributedLabel: NSAttributedString(string: text),

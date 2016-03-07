@@ -10,7 +10,7 @@ import Foundation
 
 public struct Model {
 
-    public enum Emoji {
+    public enum Emoji: String {
         case 👍, 👎, 👊
     }
 
